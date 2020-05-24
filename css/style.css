@@ -1,0 +1,724 @@
+
+                    /*Construido del fondo hacia arriba y de izquierda a derecha*/
+                                   
+                                        /*Borde y carcasa*/
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center; 
+}
+
+#borde {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    width: 66rem;
+    height: 36rem;
+    background-color: #526583;
+    border-radius: 1rem 1rem 3rem 3rem;
+}
+
+#bordeBorde {
+    display: flex;
+    justify-content: center;
+    width: 65rem;
+    height: 35rem;
+    background-color: #2f3e5b;
+    border-radius: 1rem 1rem 3rem 3rem;
+}
+
+#superior {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#carcasa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 64rem;
+    height: 36rem;
+    background-color: #566b88;
+    border-radius: 1rem 1rem 3rem 3rem;
+}
+                                        /*Parte izquierda*/                     
+#powerCrucetaAltavoz {
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    height: 31rem;
+}
+                                        /*Parte izquierda superior*/
+#letraPoweryBotón {
+    width: 17rem;
+    height: 8rem;
+    background-color: #566b88;
+}
+
+#power {
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+}
+
+.power {
+    font-weight: bold;
+}
+
+#power1 {
+    color: #22334d;
+}
+
+#power2 {
+    margin-top: -1.1rem;
+    margin-left: -0.1rem;
+    color: #92a2b9; 
+}
+
+#power3 {
+    margin-top: -1.3rem;
+    margin-left: 0.05rem;
+    color: #697992;
+}
+
+#botonesYLuces{
+    display: flex;
+    flex-direction: row;
+    margin-left:1.72rem;
+}
+
+#sombraMarcoPower:hover ~ div > div > button {
+    background-color: #fb0015;
+}
+
+#superior:hover > div:nth-child(2) > div > div > div > div{
+    margin-top: 0rem;
+    transition-duration: 5s;
+    transition-delay: 5s;
+}
+
+#sombraMarcoPower {
+    width: 4.6rem;
+    height: 2rem;
+    margin-left: 0.7rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    background-color: #333855;
+}
+
+#marcoPower {
+    width: 4.2rem;
+    height: 1.8rem;
+    margin-left: 0rem;
+    border-radius: 2rem;
+    background-color: #4f607c;
+}
+
+#botónPower {
+    width: 4rem;
+    height: 1.4rem;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+    border-radius: 2rem;
+    background-color: #2a282b;
+}
+
+#brilloBotónPower{
+    width: 3.5rem;
+    height: 1rem;
+    margin-left: 0rem;
+    margin-top: 0.2rem;
+    border-radius: 2rem;
+    background-color: #110e19;
+}
+
+.pulsarPower {
+    background-color: #110e19;
+    text-decoration: none;
+    outline: none;
+    width: 3.5rem;
+    height: 1rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.pulsarPower:hover  {
+    background-color: #2a282b;
+}
+                                
+#SombraMarcoRectangular {
+    width: 2.5rem;
+    height: 0.5rem;
+    margin-left: -0.1rem;
+    margin-top: 1.7rem;
+    background-color: #333855;
+}
+
+#MarcoRectangular {
+    width: 2.5rem;
+    height: 0.3rem;
+    margin-left: -2.5rem;
+    margin-top: 1.9rem;
+    background-color: #4d6581;
+}
+
+#SombraMarcoEncendido {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-top: 1.3rem;
+    border-radius: 2rem;
+    background-color: #333855;
+}
+
+#marcoEncendido {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 1.6rem;
+    margin-left: -1.3rem;
+    border-radius: 2rem;
+    background-color: #6b82a4;
+}
+
+#SombraLuzEncendido {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.1rem;
+    border-radius: 2rem;
+    background-color: black;
+}
+
+#luzEncendido {
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-top: 0.05rem;
+    margin-left: 0.05rem;
+    border-radius: 2rem;
+    background-color: #633d45;
+    border: none;
+}
+
+#brilloLuzEncendido {
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: -0.3rem;
+    margin-left: 0.1rem;
+}
+
+                                         /*Parte izquierda central*/
+#cruceta {
+    display: flex;
+    align-content: center;
+    width: 17rem;
+    height: 14rem;
+    background-color: #566b88;
+}
+.cruceta {
+    display: flex; 
+    justify-content: center;
+    align-self: center;
+    border-radius: 7rem;
+}
+#sombraBaseCruceta1 {   
+    width: 14rem;
+    height: 14rem;
+    margin-left: 1rem;
+    background-color: #3f4f69;
+}
+#sombraBaseCruceta2 {
+    width: 13rem;
+    height: 13rem;
+    margin-left: -0.5rem;
+    margin-top: 1rem;
+    background-color: #52657f;
+}
+#baseCruceta1 {
+    width: 12rem;
+    height: 12rem;
+    margin-left: rem;
+    margin-top: -1rem;
+    background-color: #272c42;
+}
+#baseCruceta2 {
+    width: 11rem;
+    height: 11rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: #4f637e;
+}
+#baseCruceta3 {
+    width: 9rem;
+    height: 9rem;
+    background-color: #2d2d33;
+}
+
+#baseCruceta4 {
+    width: 8rem;
+    height: 8rem;
+    margin-left: -0.5rem;
+    margin-top: rem;
+    background-color: #16151d;
+}
+
+#baseCruceta5 {
+    width: 7rem;
+    height: 7rem;
+    margin-left: -0.5rem;
+    margin-top: rem;
+    background-color: #313137;
+}
+
+#baseCruceta6 {
+    width: 7rem;
+    height: 7rem;
+    margin-left: -1rem;
+    background-color: #10101a;
+}
+
+#baseCruceta7 {
+    width: 6rem;
+    height: 6rem;
+    background-color: #1f1e24;
+}
+
+#baseCruceta7 {
+    width: 4rem;
+    height: 4rem;
+    background-color: #030303;
+}
+
+#baseCruceta8 {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    background-color: #38383d;
+}
+                                        /*Parte izquierda inferior*/
+#altavoz {
+    width: 17rem;
+    height: 9rem;
+}
+
+#puntosAltavoz {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+#columna1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#columna2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -0.1rem;
+}
+
+#columna3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -0.2rem;
+}
+
+#columna4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -0.3rem;
+}
+
+#columna5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -0.4rem;
+}
+
+.reflejoPunto {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+    background-color: #a6b5d2;
+}
+                      
+.puntoAltavoz {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+    margin-left: 0.1rem;
+    background-color: #2d3750;
+}
+
+.puntoAltavoz2 {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 1rem;
+    background-color: #070f1a;
+}
+                                        /*Parte central*/
+#carcasaPantalla {
+    width: 35rem;
+    height: 31rem;
+    background-color: #566b88;
+}
+
+.pantalla{
+    display: flex;
+    justify-content: center;  
+}
+
+#marcoPantalla{
+    width: 33rem;
+    height: 30rem;
+    margin-top: 1rem;
+    border-radius: 1rem; 
+    background-color: #251c1f;
+}
+
+#marcoPantalla2 {
+    width: 29rem;
+    height: 26rem;
+    margin-top: 2rem;
+    border-radius: 1rem; 
+    background-color: #070707;
+}
+
+#pantalla {
+    width: 25rem;
+    height: 22rem;
+    margin-top: 2rem; 
+    overflow: hidden;
+    background-color:#070707;
+}
+
+#imagenPantalla {
+    margin-top: 25rem;
+}
+
+#letrasColor {
+    margin-top: .1rem;
+    margin-left: -5.2rem;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #661416;
+}
+                                        /*Parte derecha*/
+#optionBotones {
+    width: 15rem;
+    height: 31rem;
+    background-color: #566b88;
+}
+                                        /*Parte derecha superior*/
+#optionBotón {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    height: 4.5rem;
+    background-color: #566b88;
+}
+
+.option{
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+#option1 {
+    color: #22334d;
+    margin-top: 2rem;
+}
+
+#option2 {
+    margin-top: -1.05rem;
+    margin-left: -0.1rem;
+    color: #92a2b9; 
+}
+
+#option3 {
+    margin-top: -1.25rem;
+    margin-left: 0.05rem;
+    color: #697992;
+}
+
+.botónOption {
+    border-radius: 2rem;
+}
+
+#marcoBotónOption {
+    margin-top: 1.6rem;
+    margin-left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #353b51;
+}
+
+#sombraBotónOption {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    background-color: #1a191f;
+}
+
+#botónOption {
+    display: flex;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    background-color: #26252b;
+}
+
+#brilloBotónOption {
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.05rem;
+    margin-left: 0.15rem;
+    background-color: #403c3b;
+}
+                                        /*Parte derecha centro*/
+#botones {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 18.5rem;
+    background-color: #566b88;
+}
+
+#letrasBotón {
+    display: flex;
+    width: 15rem;
+    height: 8rem;
+    font-family: fantasy;
+}
+
+#A1{
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    color: #22334d;
+    font-size: 1.75rem;
+}
+
+#A2{
+    margin-top: -2rem;
+    margin-left: -0.1rem;
+    color: #92a2b9;
+    font-size: 1.75rem;
+}
+
+#A3{
+    margin-top: -2.2rem;
+    margin-left: 0.05rem;
+    color: #697992;
+    font-size: 1.75rem;
+}
+
+#B1{
+    color: #22334d;
+    margin-top: 0.1rem;
+    margin-left: 4rem;
+    font-size: 1.75rem;
+}
+
+#B2{
+    margin-top: -2rem;
+    margin-left: -0.1rem;
+    color: #92a2b9;
+    font-size: 1.75rem;
+}
+
+#B3{
+    margin-top: -2.2rem;
+    margin-left: 0.05rem;
+    color: #697992;
+    font-size: 1.75rem;
+}
+
+#huellaBotón {
+    display: flex;
+    width: 14rem;
+    height: 9rem;
+    margin-top: -4.25rem;
+    margin-left: 0.5rem;
+    border-radius: 8rem;
+    background-color: #272c42;
+    transform: rotate(-35deg);
+}
+
+#huellaBotón0  {
+    width: 14rem;
+    height: 9rem;
+    margin-top: 0.25rem;
+    margin-left: -0.4rem;
+    border-radius: 5rem;
+    background-color: #a6b5d2;
+}
+
+#huellaBotón1 {
+    display: flex;
+    flex-direction: row;
+    width: 14rem;
+    height: 9rem;
+    border-radius: 5rem;
+    margin-top: -0.1rem;
+    margin-left: 0.2rem;
+    background-color: #4f637e;
+}
+
+.botónAcción {
+    display: flex;
+    width: 5.25rem;
+    height: 5.25rem;
+    border-radius: 3rem;
+    background-color: #070707;
+}
+
+#botónAcciónA{
+    margin-left: 1.25rem;
+    margin-top: 1.5rem;
+    background-color: #8a909e;
+}
+
+#botónAcciónA1 {
+    margin-left: -0.15rem;
+    margin-top: -0.05rem;
+    background-color: #120f18;
+}
+
+#botónAcciónA2 {
+    margin-left: 0.25rem;
+    margin-top: 0.05rem;
+    background-color: #2d2d33;
+}
+
+#botónAcciónB{
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: #8a909e;
+}
+
+#botónAcciónB1 {
+    margin-left: -0.15rem;
+    margin-top: -0.05rem;
+    background-color: #120f18;
+}
+
+#botónAcciónB2 {
+    margin-left: 0.25rem;
+    margin-top: 0.05rem;
+    background-color: #2d2d33;
+}
+                                        /*Parte derecha inferior*/
+#puntos{
+    display: flex;
+    flex-direction: row;
+    width: 15rem;
+    height: 8rem;
+    background-color: #566b88;
+}
+
+#columna31, #columna32, #columna33 {
+    display: flex;
+    flex-direction: column;
+    width: 1rem;
+    height: 7rem;
+    margin-top: 0.5rem;
+}
+
+#columna31 {
+    margin-left: 2rem;
+}
+
+#columna32, #columna33 {
+    margin-left: 4rem;
+}
+
+#segundoPunto, #tercerPunto {
+    margin-top: 2.5rem;
+}
+
+.sombraPunto {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 1rem;
+    background-color: #283651;
+}
+
+.brilloPunto {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 1rem;
+    margin-top: -0.2rem;
+    margin-left: -0.050rem;
+    background-color: #a6b5d2;
+}
+
+.punto {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 1rem;
+    margin-top: 0.3rem;
+    margin-left: 0.05rem;
+    background-color: #526182;
+}
+                                         /*Parte Inferior*/
+ #brilloGrabado {
+    display: flex;
+    width: 64rem;
+    height: 4.8rem;
+    background-color: #8393ac;
+    border-radius: 0rem 0rem 3rem 3rem;
+}
+
+#sombraGrabado {
+    width: 57rem;
+    height: 6rem;
+    margin-top: 1rem;
+    background-color: #130804;
+    border-radius: 1rem 1rem 3rem 6rem;
+}
+
+#grabado {
+    display: flex;
+    justify-content: center;
+    width: 64rem;
+    height: 4.7rem;
+    margin-top: -0.9rem;
+    background-color: #3b4966;
+    border-radius: 0rem 0rem 2.75rem 2.1rem;
+}
+
+.SNK {
+    align-self: center;
+    font-size: 44px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#SNK1 {
+    margin-top: 0rem;
+    color: #8a909e;
+}
+
+#SNK2 {
+    margin-top: -3.05rem;
+    margin-left: -0.1rem;
+    color: #120f18;
+}
+
+#SNK3 {
+    margin-top: -3.45rem;
+    margin-left: 0.05rem;
+    color: #526583;
+}
+                                        /*FINITO*/
